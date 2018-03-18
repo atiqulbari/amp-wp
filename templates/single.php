@@ -26,6 +26,11 @@ $this->load_parts( array( 'html-start' ) );
 
 	<div class="amp-wp-article-content">
 		<?php echo $this->get( 'post_amp_content' ); // WPCS: XSS ok. Handled in AMP_Content::transform(). ?>
+		<amp-social-share type="facebook"
+    data-param-app_id="470157496484568"></amp-social-share>
+		<amp-social-share type="twitter"></amp-social-share>
+		<amp-social-share type="linkedin"></amp-social-share>
+		<amp-social-share type="whatsapp"></amp-social-share>
 	</div>
 
 	<footer class="amp-wp-article-footer">
